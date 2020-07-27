@@ -14,7 +14,7 @@
   var allcookies=document.cookie.split("; ");
   for(var i=0;i<allcookies.length;i++){
     if(allcookies[i].indexOf("kcak11Client")===0){
-      document.title = (""+allcookies[i].split("=")[0]).toUpperCase();
+      document.title = (""+allcookies[i].split("=")[1]).toUpperCase();
       break;
     }
   }
