@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <style type="text/css">
-    body{
+    body {
       font-family: Verdana;
     }
   </style>
 </head>
+
 <body>
-<h1>Welcome</h1>
-<h3>visit <a href="https://www.kcak11.com" target="_blank">https://www.kcak11.com</a> (or) <a href="https://www.ashishkumarkc.com" target="_blank">https://www.ashishkumarkc.com</a></h3>
-<script type="text/javascript">
-  var allcookies=document.cookie.split("; ");
-  for(var i=0;i<allcookies.length;i++){
-    if(allcookies[i].indexOf("kcak11Client")===0){
-      document.title = (""+allcookies[i].split("=")[1]).replace("web.","").replace("services.","").toUpperCase();
-      break;
+  <h1>Welcome</h1>
+  <h3>
+    <span>Please visit:</span>
+    <br />
+    <a href="https://www.kcak11.com" target="_blank">https://www.kcak11.com</a>
+    (or)
+    <a href="https://www.ashishkumarkc.com" target="_blank">https://www.ashishkumarkc.com</a>
+  </h3>
+  <script type="text/javascript">
+    var allcookies = document.cookie.split("; ");
+    for (var i = 0; i < allcookies.length; i++) {
+      if (allcookies[i].indexOf("kcak11Client") === 0) {
+        document.title = ("" + allcookies[i].split("=")[1]).replace("web.", "").replace("services.", "").toUpperCase();
+        break;
+      }
     }
-  }
-</script>
+  </script>
 </body>
+
 </html>
