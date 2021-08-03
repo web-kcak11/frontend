@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='//www.kcak11.com/favicon.ico' rel='icon' type='image/x-icon' />
+  <style type="text/css">
+    body {
+      font-family: Verdana;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome</h1>
+  <h3>
+    <span>Please visit:</span>
+    <br />
+    <a href="https://www.kcak11.com" target="_blank">https://www.kcak11.com</a><br />
+    (or)<br />
+    <a href="https://www.ashishkumarkc.com" target="_blank">https://www.ashishkumarkc.com</a>
+  </h3>
+  <script type="text/javascript">
+    var allcookies = document.cookie.split("; ");
+    for (var i = 0; i < allcookies.length; i++) {
+      if (allcookies[i].indexOf("kcak11Client") === 0) {
+        document.title = ("" + allcookies[i].split("=")[1]).replace("web.", "").replace("services.", "").toUpperCase();
+        break;
+      }
+    }
+  </script>
+</body>
+
+</html>
